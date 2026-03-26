@@ -21,7 +21,7 @@ export default function Button({
     }
 
     const textColors = {
-        primary: "#ff7a00",
+        primary: "#c2d60fff",
         success: "#10b981",
         dark: "#000000",
         light: "#ffffff"
