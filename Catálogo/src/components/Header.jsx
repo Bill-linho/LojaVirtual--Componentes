@@ -1,8 +1,8 @@
 export default function Header() {
   return (
     <header className="header">
-      <h1>Trafico Humano</h1>
-      <p>Os piores preços estão aqui</p>
+      <h1>Loja de Eletronicos</h1>
+      <p>Preços inperdiveis</p>
     </header>
   );
 }

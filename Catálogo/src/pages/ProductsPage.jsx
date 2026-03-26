@@ -4,24 +4,24 @@ import ProductCard from "../components/ProductCard"
 export default function ProductsPage() {
     const produtos = [{
         id: 1,
-        nome: "Vitor",
-        categoria: "gay",
-        preco: 1.00,
-        imagem: "/Vitor.jpg"
+        nome: "Mause",
+        categoria: "Eletronico",
+        preco: 100.00,
+        imagem: "/Mause.jpg"
     },
     {
         id: 2,
-        nome: "VitorClt",
-        categoria: "Assexuado",
-        preco: 0.01,
-        imagem: "/Vitor2.jpg",
+        nome: "Monitor",
+        categoria: "Eletronico",
+        preco: 400.00,
+        imagem: "/Monitor.jpg",
     },
     {
         id: 3,
-        nome: "VitorCastrato",
-        categoria: "Escravo",
-        preco: 0.15,
-        imagem: "/Vitor3.jpg",
+        nome: "Teclado",
+        categoria: "Eletronico",
+        preco: 150.00,
+        imagem: "/Teclado.jpg",
     }
     ]
     return (
@@ -29,7 +29,7 @@ export default function ProductsPage() {
             <Header />
             <section className="products-grid">
                 {produtos.map((produtos)=>{
-                    const destaque = produtos.preco >= 1.00 || produtos.categoria === "promoção"
+                    const destaque = produtos.preco >= 300 || produtos.categoria === "promoção"
                     return(
                         <ProductCard key={produtos.id} produto={produtos} destaque={destaque}/>
                     )

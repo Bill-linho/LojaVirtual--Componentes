@@ -16,7 +16,7 @@ const categoriaClass = produto.categoria.toLowerCase()
             {/*Destaque*/}
             {destaque && (
                 <div className="product-higlight">
-                    💀
+                    💸
                 </div>
             )}
             {/*Imagem*/}
