@@ -1,23 +1,32 @@
-export default function Button({ text, onClick, bgColor = "primary", size = "md", textColor = "light" }) {
+import { useState } from "react"
+
+export default function Button({
+    text,
+    onClick,
+    bgColor = "primary",
+    size = "md",
+    textColor = "light",
+}) {
     const bgColors = {
-        primary: "#1465",
-        success: "rgba(109, 19, 49, 1)",
-        dark: "#000000ff",
-        light: "#ffffffff"
+        primary: "#ff7a00",
+        success: "#10b981",
+        dark: "#000000",
+        light: "#ffffff"
     }
 
     const sizes = {
-        sm:"6px 10px",
-        md:"10px 15px",
-        lg:"999px 999px"
+        sm: "6px 10px",
+        md: "10px 15px",
+        lg: "12px 20px"
     }
 
     const textColors = {
-        primary: "rgba(13, 19, 9, 0.33)",
-        success: "rgba(199, 89, 15, 1)",
-        dark: "#000000ff",
-        light: "#ffffffff"
+        primary: "#ff7a00",
+        success: "#10b981",
+        dark: "#000000",
+        light: "#ffffff"
     }
+
 
     const styleButton = {
         backgroundColor: bgColors[bgColor] || bgColor,
@@ -25,12 +34,12 @@ export default function Button({ text, onClick, bgColor = "primary", size = "md"
         padding: sizes[size] || size,
         border: "none",
         borderRadius: "8px",
-        frontWeight: "bold",
-        cursor: "pointer"
+        fontWeight: "bold",
+        cursor: "pointer",
     }
 
     return (
-        <button className="button" onClick={onClick} style={styleButton}>
+        <button className="product-button" style={styleButton} onClick={onClick}>
             {text}
         </button>
     )
